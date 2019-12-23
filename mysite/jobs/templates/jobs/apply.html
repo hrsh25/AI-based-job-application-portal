@@ -1,0 +1,23 @@
+{% extends 'jobs/base.html' %}
+
+{% block body %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+</head>
+<body>
+
+    <form method="post" enctype="multipart/form-data" class="form-horizontal">
+        {% csrf_token %}
+        The application process will take 15-20 minutes.
+    <br> Upload your resume here to continue.
+    <br><br>
+        <input type="file" name="resume">
+        <button type="submit">Upload</button>
+    </form>
+<br>
+
+</body>
+</html>
+{% endblock %}

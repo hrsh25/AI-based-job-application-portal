@@ -1,0 +1,51 @@
+{% extends 'jobs/base.html' %}
+
+{% block body %}
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+    <form method="post" enctype="multipart/form-data" class="form-horizontal">
+    {% csrf_token %}
+      <!--  {% for question in object_list %}
+         <div class="form-group">
+            <label for="question">{{question.question}}</label>
+            <br><textarea rows="4" cols="50" id="question" name="answer"></textarea>
+        </div>
+        {% endfor %}-->
+         <div class="form-group">
+            <label for="question1">What are the main concepts of OOPs in Java?</label>
+            <br><textarea rows="4" cols="50" id="question1" name="answer1"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="question2">Which are the different data types in C?</label>
+            <br><textarea rows="4" cols="50" id="question2" name="answer2"></textarea>
+        </div>
+
+
+        <div class="form-group">
+            <label for="question3">What are the benefits of using Python?</label>
+            <br><textarea rows="4" cols="50" id="question3" name="answer3"></textarea>
+        </div>
+
+
+        <div class="form-group">
+            <label for="question4">Why isn't Java 100% Object oriented?</label>
+            <br><textarea rows="4" cols="50" id="question4" name="answer4"></textarea>
+        </div>
+
+
+        <div class="form-group">
+            <label for="question5">Which are different SDLC models?</label>
+            <br><textarea rows="4" cols="50" id="question5" name="answer5"></textarea>
+        </div>
+
+         <br><br><div class="col-sm-offset-2 col-sm-10">
+         <button type="submit">Save</button>
+         </div>
+    </form>
+    </body>
+    </html>
+{% endblock %}

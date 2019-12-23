@@ -1,0 +1,33 @@
+{% load static %}<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'jobs/style.css' %}">
+</head>
+<body style="background-color:#5c848e">
+        <nav class="navbar navbar-expand-lg navbar-light mb-4" style="background-color:#decdc3">
+            <div class="container">
+                <a class="navbar-brand" href="{% url 'index' %}">Job Portal</a>
+                <a class="navbar-brand" href="http://127.0.0.1:8000/admin/" align="right">Admin</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10 col-md-12">
+        <div class="card mb-4">
+          <div class="card-body">
+            {% block body %}
+            {% endblock %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
