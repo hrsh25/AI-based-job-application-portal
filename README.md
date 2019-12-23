@@ -24,3 +24,7 @@ Project Description:
 
 •	This interface can be used by the recruiter to:
 Post job openings, Look at candidate’s profile(from the data extracted), See the answers by the candidate, See the performance of the candidate.
+
+
+The resume extraction portion is referenced from:
+https://github.com/OmkarPathak/ResumeParser
